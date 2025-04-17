@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Section spacing */
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a3d5d;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #294d6e;
+  }
+  
+  /* Search Input */
+  #search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #search-input:focus {
+    border-color: #4682b4;
+    box-shadow: 0 0 5px rgba(70, 130, 180, 0.3);
+  }
+  
+  /* Grid UL Styling */
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+    padding: 0;
+    list-style: none;
+    margin-top: 0.5rem;
+  }
+  
+  /* LI Cards */
+  li {
+    background-color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  li:hover {
+    background-color: #e3edf7;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    #search-input {
+      font-size: 0.95rem;
+    }
+  }
+  
